@@ -41,20 +41,23 @@
     letter-spacing: 0.7px;
 
 }
-.navbar_itens .navbar_profile:hover {
+.navbar_itens .navbar_profile a:hover {
     color: var(--red-color);
     transition: 0.5s;
     font-size: 15.5px;
 }
-.navbar_itens .navbar_map:hover {
+.navbar_itens .navbar_map a:hover {
     color: var(--yellow-color);
     transition: 0.5s;
     font-size: 15.5px;
 }
-.navbar_itens .navbar_home:hover {
+.navbar_itens .navbar_home a:hover {
     color: var(--green-color);
     transition: 0.5s;
     font-size: 15.5px;
+}
+.navbar_itens a {
+    text-decoration: none;
 }
 
 .login_form {
