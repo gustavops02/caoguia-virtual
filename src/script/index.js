@@ -13,5 +13,4 @@ document.getElementById("button_login").addEventListener("click", (event) => {
         errorSpan.innerHTML = "Usuário ou senha incorreto(s)";
         errorSpan.classList.add("error_msg");
     }
-
 })
