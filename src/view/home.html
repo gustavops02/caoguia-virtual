@@ -1,20 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Cão-Guia Virtual</title>
-    <style>
-        #voiceResult{
-            padding: 30px 0px 30px 0;
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
@@ -28,15 +19,15 @@
             </ul>
         </nav>
 
-        <iframe src="https://embed.waze.com/iframe?zoom=14&lat=-22.8957468&lon=-43.1179254&pin=1&desc=1" width="100%"
-            height="340">
-        </iframe>
-
-        <p id="voiceResult"></p>
+        <div class="container_section">
+            <div class="search_section">
+                <span>Filtrar por: <button>Endereço</button></span>
+                <input type="text" />
+            </div>
+        </div>
 
     </div>
-
-
-    <script src="../script/home.js"></script>
+    <script src="../script/index.js"></script>
 </body>
+
 </html>

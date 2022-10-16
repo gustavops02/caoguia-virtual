@@ -6,7 +6,7 @@ const errorSpan = document.getElementById("errMsg");
 
 document.getElementById("button_login").addEventListener("click", (event) => {
     if (usernameInput.value == user.nome && passwordInput.value == user.password) {
-        window.location.href = "../view/home.html";
+        window.location.href = "../view/map.html";
     } else if (usernameInput.value !== user.nome || passwordInput.value !== user.password) {
         passwordInput.style.border = "2px solid #f20001";
         usernameInput.style.border = "2px solid #f20001";
