@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/sessions.css">
     <title>Cão-Guia Virtual</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="container">
-            <nav class="navbar_main">
-                <ul class="navbar_itens">
-                    <li class="navbar_home"><a href="./home.html" target="_self">Home</a></li>
-                    <li class="navbar_map"><a href="./map.html" target="_self">Rotas</a></li>
-                    <li class="navbar_profile"><a href="./profile.html" target="_self">Perfil</a></li>
-                </ul>
-            </nav>
+    <div class=" container_pages">
+        <nav class="navbar_main">
+            <ul class="navbar_itens">
+                <li class="navbar_home"><a href="./home.html" target="_self">Home</a></li>
+                <li class="navbar_map"><a href="./map.html" target="_self">Rotas</a></li>
+                <li class="navbar_profile"><a href="./profile.html" target="_self">Perfil</a></li>
+            </ul>
+        </nav>
+
+        <div class="content_profile">
+            <div>
+                Nome: <span class="name_user">Cliente</span>
+            </div>
+            <div>
+                N° de viagens: <span class="number_travel">186</span>
+            </div>
+            <div>
+                E-mail: <span class="email">Adicionar e-mail</span>
+            </div>
+            <input type="email" id="emailInput" placeholder="Digite seu e-mail" required />
+            <p id="resultError">Digite um e-mail válido</p>
+            <button class="email_btn email">Adicionar</button>
         </div>
-
-
-        
     </div>
 
 
+    <script src="../script/profile.js"></script>
 </body>
+
 </html>

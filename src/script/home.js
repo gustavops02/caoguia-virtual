@@ -10,4 +10,4 @@ setInterval(function () {
     let metros = Math.floor(Math.random() * 1000) + 1;
     result.innerHTML = ` A ${metros}m, vire a ${(newPos ==1)? position[0]:position[1]}`
 
-}, 6000)
+}, 10000)
