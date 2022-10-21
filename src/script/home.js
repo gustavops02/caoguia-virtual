@@ -1,13 +1,18 @@
+function writerTransition(element) {
+    const arr = element.innerHTML.split('');
+    element.innerHTML = '';
+    arr.forEach((letter, i) => {
+        setTimeout(() => element.innerHTML += letter, 90 * i)
+    });
+}
+const title = document.querySelector('.txt_transition');
+writerTransition(title);
 
-const result = document.querySelector("#voiceResult");
+const btnMic = document.querySelector('.mic').addEventListener('click', () => {
 
-setInterval(function () {
-    let position = ['esquerda', 'direita'];
-    newPos = Math.floor(Math.random()*3) + 1;
-    if(newPos == undefined){
-        newPos = 1
-    }
-    let metros = Math.floor(Math.random() * 1000) + 1;
-    result.innerHTML = ` A ${metros}m, vire a ${(newPos ==1)? position[0]:position[1]}`
+    setInterval(() => {
+        document.querySelector('.get_audio').value = "Gravando..."
+    }, 12);
 
-}, 10000)
+
+})
