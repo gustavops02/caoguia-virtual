@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-:root{
+
+:root {
     --red-color: #f20001;
-    --yellow-color:#f2ce00;
+    --yellow-color: #f2ce00;
     --green-color: #22f300;
     --bg-color: #1c2128;
     --navbar-color: #2d333b;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -15,23 +17,22 @@
 }
 
 
-.container { border-radius: 25px;
+.container {
+    border-radius: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(
-        180deg,
-        hsl(0deg 100% 57%) 0%,
-        hsl(24deg 100% 50%) 22%,
-        hsl(35deg 100% 50%) 33%,
-        hsl(45deg 100% 50%) 42%,
-        hsl(55deg 100% 50%) 50%,
-        hsl(64deg 100% 47%) 58%,
-        hsl(76deg 100% 48%) 67%,
-        hsl(89deg 100% 49%) 78%,
-        hsl(120deg 100% 50%) 100%
-      );
+    background-image: linear-gradient(180deg,
+            hsl(0deg 100% 57%) 0%,
+            hsl(24deg 100% 50%) 22%,
+            hsl(35deg 100% 50%) 33%,
+            hsl(45deg 100% 50%) 42%,
+            hsl(55deg 100% 50%) 50%,
+            hsl(64deg 100% 47%) 58%,
+            hsl(76deg 100% 48%) 67%,
+            hsl(89deg 100% 49%) 78%,
+            hsl(120deg 100% 50%) 100%);
     width: 360px;
     height: 600px;
 }
@@ -46,9 +47,12 @@
     transform: translate(-50%, -50%);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
-.navbar_itens { background-color: var(--navbar-color);
+.navbar_itens {
+    background-color: var(--navbar-color);
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 
@@ -57,7 +61,7 @@
     justify-content: space-around;
 }
 
-.navbar_itens li { 
+.navbar_itens li {
     font-size: 15px;
     cursor: pointer;
     list-style-type: none;
@@ -65,24 +69,29 @@
     letter-spacing: 0.7px;
 
 }
+
 .navbar_itens .navbar_profile a:hover {
     color: var(--red-color);
     transition: 0.5s;
     font-size: 15.5px;
 }
+
 .navbar_itens .navbar_map a:hover {
     color: var(--yellow-color);
     transition: 0.5s;
     font-size: 15.5px;
 }
+
 .navbar_itens .navbar_home a:hover {
     color: var(--green-color);
     transition: 0.5s;
     font-size: 15.5px;
 }
+
 .navbar_itens a {
     text-decoration: none;
 }
+
 img {
     position: relative;
     left: 50%;
@@ -98,7 +107,9 @@ img {
     top: 10%;
     margin: auto;
 }
-.login_form #username_login, #password_login {
+
+.login_form #username_login,
+#password_login {
     padding: 8px;
     outline: 0;
     border-radius: 9px;
@@ -106,7 +117,9 @@ img {
     border: none;
     color: #000;
 }
-.login_form [type="submit"] { cursor: pointer;
+
+.login_form [type="submit"] {
+    cursor: pointer;
     padding: 11px;
     margin-top: 16px;
     color: #fff;
@@ -116,9 +129,11 @@ img {
     letter-spacing: 1px;
     border: none;
 }
+
 .login_form [type="submit"]:hover {
     transition: 0.5s;
 }
+
 .login_form input::placeholder {
     font-style: italic;
 }
@@ -133,6 +148,7 @@ img {
 #voiceResult {
     color: #fff;
 }
+
 .content_profile {
     margin-left: 30px;
     display: flex;
@@ -141,24 +157,30 @@ img {
     top: 10%;
     flex-direction: column;
 }
-.number_travel, .name_user {
+
+.number_travel,
+.name_user {
     margin-left: 5px;
     color: #fff;
 }
+
 .content_profile div {
     font-size: 19px;
     padding: 2px;
     margin-top: 2px;
     color: #fff;
 }
-.content_profile .email { cursor: pointer;
+
+.content_profile .email {
+    cursor: pointer;
     font-size: 14px;
     border-radius: 9px;
     padding: 5px;
-    color: #fff;
-    background-color: var(--red-color);
+    color: #000;
+    background-color: var(--yellow-color);
     border: none;
 }
+
 #emailInput {
     margin-top: 12px;
     padding: 4px;
@@ -168,21 +190,48 @@ img {
     color: #1c2128;
     display: none;
 }
+
 #emailInput::placeholder {
     color: #2d333b;
 }
 
-.btnForEmail { cursor: text !important;
+.btnForEmail {
+    cursor: text !important;
     color: #fff !important;
     background-color: unset !important;
-    border: none !important;    
+    border: none !important;
     font-size: 15px;
 }
+
 .email_btn {
     margin-top: 12px;
     display: none;
 }
+
 #resultError {
     color: var(--red-color);
     display: none;
+}
+
+.logout {
+    position: absolute;
+    top: 92%;
+    left: 49%;
+    transform: translate(-50%, -100%);
+    background-color: var(--red-color);
+    border: none;
+    width: 100px;
+    padding: 9px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.logout a {
+    text-decoration: none;
+}
+
+.abs_pos {
+    position: absolute;
+    top: 60%;
 }
