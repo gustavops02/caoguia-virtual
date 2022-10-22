@@ -13,6 +13,17 @@ const btnMic = document.querySelector('.mic').addEventListener('click', () => {
     setInterval(() => {
         document.querySelector('.get_audio').value = "Gravando..."
     }, 12);
+    setTimeout(() => {
+        document.querySelector('.first_p').style.visibility = "visible"
+        setTimeout(() => {
+            document.querySelector('.second_paragraph').style.visibility = "visible"
+            document.querySelector('.loader').style.visibility = "visible"
+        }, 1000);
+        
+        setTimeout(() => {
+            window.location.href = "../view/map.html";
 
+        }, 5000);
 
+    }, 5000);
 })

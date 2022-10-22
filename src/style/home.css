@@ -10,6 +10,21 @@
 .container_top_half {
     height: 230px;
 }
+.container_bottom_half {
+    height: 308px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+.container_bottom_half .first_p {
+    text-align: center;
+    visibility: hidden;
+}
+.container_bottom_half .second_paragraph {
+    margin-top: 2cm;
+    text-align: center;
+    visibility: hidden;
+}
 
 .container_top_half .txt_transition {
     font-size: 20px;
@@ -32,11 +47,18 @@
 
 }
 .mic { cursor: pointer;
-    color: var(--red-color);
-    position: relative;
-    font-size: 19px;
-    right: 40px;
-    top: 2px;
-    border-left: 1px solid green;
+    color: var(--green-color);
+    position: absolute;
+    font-size: 50px;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding-left: 9px;
+}
+.mic:hover {
+    font-size: 52px;
+    transition: 0.2s;
+}
+.loader {
+    visibility: hidden;
 }
